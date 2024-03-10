@@ -1,7 +1,7 @@
 # isa2024-healtcalc
 Health calculator
 
-##Tests a realizar
+## Tests a realizar
 - El género masculino es recogido correctamente por el método para calcular el peso ideal
 - El género femenino es recogido correctamente por el método para calcular el peso ideal
 - Las cuentas del método para calcular el peso ideal se realizan de forma correcta, habrá un test para hombre y otro para mujer
