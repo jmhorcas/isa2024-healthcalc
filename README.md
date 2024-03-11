@@ -14,3 +14,7 @@ Health calculator
 - Si la altura introducida para calcular el BMR es mayor de 3, se lanzará una excepción.
 - Si la altura para calcular el peso ideal es menor que 100 cm en el caso de los hombres, no da resultados coherentes, por lo que se comprobará que, si la altura introducida es menor de 100, se lance una excepción.
 
+***
+El fichero TEST-healthcalc.HealthCalcTest.xml no se genera, por lo que pondremos una imagen que demuestra que nuestro tests han sido aprobados:
+
+!(C:/Users/alexa/OneDrive/Escritorio/Ingeniería del Software Avanzada/prácticas/tests_pasados.jpeg)
