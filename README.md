@@ -35,3 +35,8 @@ Se ha creado este repositorio para realizar la práctica 1, que consiste en real
 * Test para comprobar los valores promedios de la mujer testWomanBRM() &rarr; Se comprueba que tanto para el límite superior, como para el inferior, como para el el promedio de las mujeres se realicen bien los cálculos.
 
 * Test para comprobar los valores promedios de los hombres testMenBMR()&rarr; Se comprueba tanto para el límite superior, como para el inferior, como para el valor promedio del hombre se obtiene el resultado esperado.
+
+## Ejcución de los Test:
+Para realizar la ejecución de maven en Visual Studio Code, tendremos que abrir la terminal y escribir el siguiente comando:
+
+![código para poner](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/image.png)
