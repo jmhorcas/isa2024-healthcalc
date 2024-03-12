@@ -18,3 +18,11 @@ Health calculator
 El fichero TEST-healthcalc.HealthCalcTest.xml no se genera, por lo que pondremos una imagen que demuestra que nuestro tests han sido aprobados:
 
 ![Imagen de los tests pasados por nuestro programa](/tests_pasados.jpeg)
+
+***
+Imagen de gitk con los commits realizados:
+
+![Imagen de los commits realizados](/gitk.jpg)
+
+Como podemos observar, hemos realizados más commits de los necesarios para la inserción de la primera imagen, esto es debido a que no aparecía la imagen en este fichero en GitHub. Además, cabe destacar que este último para que se vea esta actualización no aparece en la imagen, pues la tenemos que hacer después de su inserción.
+
