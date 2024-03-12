@@ -38,5 +38,23 @@ Se ha creado este repositorio para realizar la práctica 1, que consiste en real
 
 ## Ejcución de los Test:
 Para realizar la ejecución de maven en Visual Studio Code, tendremos que abrir la terminal y escribir el siguiente comando:
+![Código usado](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/Captura%20de%20pantalla%202024-03-12%20181210.png)
 
-![código para poner](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/image.png)
+Y hemos obtenido todos los test ejecutados de manera correcta:
+![Obtención de los test](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/image.png)
+
+## Repositorio desarrollado
+Durante esta práctica hemos desarrollado un repositorio que, al principio de la misma no le realice las modificaciones y actalizaciones pertinentes, es por ello que tuve que repetir el proceso creandolo de nuevo para poder adjuntar los distintos commits cuando se desarrollaba cada una de las partes del proyecto. Este es el motivo por el cual las horas en repositorio son tan cercanas, puesto que ya contenía la información y la práctica realizada en otro proyecto de Visual Studio pero me vi obligado a repetirla.
+
+---
+Hemos usado esta metodología para ir registrando cada uno de los pasos realizados a lo largo del desarrollo de la práctica aunque considero que en estos casos, dónde la práctica es relativamente corta no sería preciso hacer demasiados commits.
+
+---
+![gitk](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/captura3.png)
+
+Como podemos apreciar no ha habido ninguna necesidad de creación de ramas. Además como el proyecto se ha realizado de manera individual, debería de haberme servido para marcarme rumbo por el trabajo, sin embargo y debido a los problemas que he presentado. Las modificaciones de git las realicé en último lugar.
+
+#### Trabajo realizado por RUBÉN M. RODRÍGUEZ CHAMORRO
+
+
+
