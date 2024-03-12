@@ -17,4 +17,4 @@ Health calculator
 ***
 El fichero TEST-healthcalc.HealthCalcTest.xml no se genera, por lo que pondremos una imagen que demuestra que nuestro tests han sido aprobados:
 
-!(C:/Users/alexa/isa2024-healthcalc/tests_pasados.jpeg)
+![Imagen de los tests pasados por nuestro programa](C:/Users/alexa/OneDrive/Escritorio/Ingeniería del Software Avanzada/prácticas/tests_pasados.jpeg)
