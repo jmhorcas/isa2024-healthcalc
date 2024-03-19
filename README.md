@@ -1,12 +1,17 @@
 <!--HEAD-->
 # isa2024 - healtcalc
+
+<details>
+<summary>Práctica 1</summary>
+
+
 ## Objetivos
 Se desea desarrollar una calculadora que permita estimar varios parámetros de salud de una persona, como su peso ideal o su tasa metabólica basal (TMB).
 ## Introducción
 Se ha creado este repositorio para realizar la práctica 1, que consiste en realizar la ya nombrada calculadora para ello hemos hecho uso de git, github, de los entornos Maven y JUnits5.
 ### Contenidos a tener en cuenta
-* `idealWeight`: Necesita los vaores de altura y género y su salida será el peso considerado Ideal
-* `basalMetabolicRate`: Se necesita peso, altura, género y la edad del individuo, para así poder obtener el metabolismo ideal.
+* idealWeight: Necesita los vaores de altura y género y su salida será el peso considerado Ideal
+* basalMetabolicRate: Se necesita peso, altura, género y la edad del individuo, para así poder obtener el metabolismo ideal.
 
 ## Test utilizados en idealWeight():
 * Test de altura negativa testAlturaNegativaIW() &rarr; comprobamos que cuando una altura es muy pequeña o incluso o negativa. Se lanza la excepción correctamente.
@@ -24,9 +29,9 @@ Se ha creado este repositorio para realizar la práctica 1, que consiste en real
 * Test de cálculo promedio de mujeres testMujerPromedio() &rarr; usando los valores superiores e inferiores al igual que el valor medio comprobamos que los resultados de la calculadora sean los esperados.
 
 ## Test utilizados en basalMetabolicRate():
-* Test para los pesos que no sean correctos PesoIncorrecto() &rarr; Se hacen 3 distintas comprobaciones, *la primera* es para cuando el valor del peso se da en negativo y se tienque lanzar excepción, *la segunda* es para cuando el valor del peso es inferior a lo delimitado en el rango, se lanza la excepción y *la tercera* es para cuando se excede el rango superior de peso y también se lanza la excepción.
+* Test para los pesos que no sean correctos PesoIncorrecto() &rarr; Se hacen 3 distintas comprobaciones, la primera es para cuando el valor del peso se da en negativo y se tienque lanzar excepción, la segunda es para cuando el valor del peso es inferior a lo delimitado en el rango, se lanza la excepción y la tercera es para cuando se excede el rango superior de peso y también se lanza la excepción.
 
-* Test pra la altura incorrecta alturaIncorrecta() &rarr; Se hacen también 3 distintas comprobaciones, *la primera* de ellas es para cuando el valor dado sea en negativo, *la segunda* es para cuando el valor dado sea inferior al rango permitido, y *la tercera*  es para cuando el valor sea superior a lo permitido, en cualquira de los casos se comprueba que se lanza la excepción.
+* Test pra la altura incorrecta alturaIncorrecta() &rarr; Se hacen también 3 distintas comprobaciones, la primera de ellas es para cuando el valor dado sea en negativo, la segunda es para cuando el valor dado sea inferior al rango permitido, y la tercera  es para cuando el valor sea superior a lo permitido, en cualquira de los casos se comprueba que se lanza la excepción.
 
 * Test para comprobar el Sexo IncorrectoSexo() &rarr; Se comprueba que cuando se introduzca un sexo que sea distinto de "M" o "W" sin tener en cuenta las máyusculas y minúsculas salte la excepción.
 
@@ -56,5 +61,29 @@ Como podemos apreciar no ha habido ninguna necesidad de creación de ramas. Adem
 
 #### Trabajo realizado por RUBÉN M. RODRÍGUEZ CHAMORRO
 
+</details>
 
+</details>
+<summary>Práctica 2</summary>
 
+Para el desarrollo de esta práctica, hemos clonado el repostorio de nuevo en nuestro dispositivo de manera local. Hemos añadido los distintos branchs que expecificaban en el trabajo, de tal forma que el "anterior" main se ha convertido en tarea1 y hemos creado otra rama tarea2 dónde hemos desarrollado esta práctica.
+
+### *Objetivos* 
+
+El objetivo de la práctica era desarrollar un diagrama de casos de uso, para ello hemos hecho uso de la aplicación que usamos en la anterior asignatra de Softwarer Visual Paradigm. Pero en este caso y debido a que quería evitar fallos a la hora de licencias, he decidido usar la aplicación de manera online. Cabe destacar que no me ha dejado guardar el documento como tal y por ello sólo tengo las capturas de las imágenes.
+
+### Primer Diagrama de Casos de Uso, básico.
+En este diagrama hemos desarollado la cálculadora de manera básica contando con la información que se nos proporcionó en la práctica 1.
+
+![](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/doc/CasosdeUso.png)
+
+### Segundo Diagrama de Casos de Uso, dos casos de uso añadidos.
+En este segundo diagrama he añadido los casos de uso del cálculo de IMC (Ìndice de Masa Corporal) y he añadido uno de necesidades calóricas.
+
+![](https://github.com/Rvbenrch/isa2024-healthcalc/blob/main/doc/casosUsoAnadidos.png)
+
+*- El índice de masa Corporal* 
+Es una herramienta simple y utilizada para evaluar el estado de peso de una persona en relación con su altura. Se calcula dividiendo el peso peso en kilograos por el cuadrado de la altura en metros kg/m^2 . Los resultados pueden indicar el porcentaje de peso de la persona, o bien sobre peso o bien peso normal o peso bajo
+
+*- Necesidades calóricas diarias*
+Una vez que conocemos la TMB, podemos estimar las necesidades calóricas añadiendole un factor (que es desiganado por la edad) que estima cuánto de ejercicio en porcentaje a tu edad debes de realizar.
