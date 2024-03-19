@@ -1,6 +1,8 @@
 # isa2024-healtcalc
 Health calculator
 
+# Práctica 1
+
 ## Tests a realizar
 - El género es recogido correctamente por el método para calcular el peso ideal
 - Las cuentas del método para calcular el peso ideal se realizan de forma correcta, habrá un test para hombre y otro para mujer
@@ -26,3 +28,8 @@ Imagen de gitk con los commits realizados:
 
 Como podemos observar, hemos realizados más commits de los necesarios para la inserción de la primera imagen, esto es debido a que no aparecía la imagen en este fichero en GitHub. Además, cabe destacar que este último para que se vea esta actualización no aparece en la imagen, pues la tenemos que hacer después de su inserción.
 
+
+# Práctica 2
+
+# Diagrama de casos de uso
+![Imagen de los diagramas de casos de uso](/fotoCasosDeUso.jpg)
