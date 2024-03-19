@@ -1,0 +1,15 @@
+Especificación de un caso de uso
+
+Calcular el peso ideal
+
+- Primary actor: usuario aplicación
+- Scope: la aplicación de la calculadora debe de permitir ingresar correctamente, el sistema calcula correctamente el peso idea y muestra los datos al usuario. Además, si hay algún error, por ejemplo al ingresar el usuario los datos, el sistema debe de ser capaz de manejarlos.
+- Level: summary
+- Stakeholders and Interests: el usuario que quiere conocer su peso ideal y la aplicación que es la encargada de calcularlo.
+- Preconditions: el usuario inicia la aplicación, ingresa los datos y selecciona que quiere calcular su peso ideal.
+- Minimal Guarantee: la aplicación tiene que tratar los datos del paciente conforme a la política de privacidad del país y garantizar un resultado correcto dentro de un error máximo especificado en la misma.
+- Success guarantee: para mostrar que tiene éxito mostrar la fórmula seguida por nuestra aplicación.
+- Trigger: el evento final que dispara el cálculo del peso ideal es que el usuario seleccione que lo que desea es calcular su peso ideal.
+- Main success scenario: el usuario incia la aplicación, ingresa sus datos, selecciona la opción que quiere, que en este caso debe de ser calcular el peso ideal, la aplicación realiza las cuentas y devuelve el peso ideal calculado.
+- Alternative Scenario: en el momento en el que la aplicación va a realizar los cálculos ve que el usuario ha introducido mal uno o varios de los datos solicitados, por lo que se vuelven a pedir hasta que son correctos y se puede seguir el curso normal de hacer el cálculo y mostrar el resultado.
+- Extensions: si el usuario decide volver atrás la aplicación debe volver a la página en la que se selecciona qué medida desea que se calcule.
