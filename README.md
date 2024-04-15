@@ -49,3 +49,23 @@ Calcular el peso ideal
 - Main success scenario: el usuario incia la aplicación, ingresa sus datos, selecciona la opción que quiere, que en este caso debe de ser calcular el peso ideal, la aplicación realiza las cuentas y devuelve el peso ideal calculado.
 - Alternative Scenario: en el momento en el que la aplicación va a realizar los cálculos ve que el usuario ha introducido mal uno o varios de los datos solicitados, por lo que se vuelven a pedir hasta que son correctos y se puede seguir el curso normal de hacer el cálculo y mostrar el resultado.
 - Extensions: si el usuario decide volver atrás la aplicación debe volver a la página en la que se selecciona qué medida desea que se calcule.
+
+# Practica 3
+Historias de Usuario
+
+1. Cálculo del peso ideal de una persona:
+- Como: usuario
+- Quiero: poder introducir mis datos en la aplicación
+- Para: obtener el cálculo de mi peso ideal
+- Criterios de aceptación:
+- Escenario 1: los datos son introducidos correctamente y se devuelve el peso D>
+- Escenario 2: los datos se han introducido de forma incorrecta: Dado: el usuar>
+2. Cálculo de BMR de una persona:
+- Como: usuario
+- Quiero: poder introducir mis datos en la aplicación
+- Para: obtener el cálculo de mi tasa metabolica basal
+- Criterios de aceptación:
+- Escenario 1: los datos son introducidos correctamente y se devuelve la BMR Da>
+- Escenario 2: los datos se han introducido de forma incorrecta: Dado: el usuar>
+
+# Practica 4
