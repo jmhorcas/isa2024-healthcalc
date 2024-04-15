@@ -69,3 +69,6 @@ Historias de Usuario
 - Escenario 2: los datos se han introducido de forma incorrecta: Dado: el usuar>
 
 # Practica 4
+![Imagen de la interfaz](/interfaz.png)
+
+![Imagen de la interfaz](/interfaz2.png)
