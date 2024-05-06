@@ -67,3 +67,10 @@ Historias de Usuario
 - Criterios de aceptación:
 - Escenario 1: los datos son introducidos correctamente y se devuelve la BMR Dado: el usuario ha introducido los datos sin errores Cuando: el usuario clica en calcular BMR Entonces: la aplicación devuelve el BMR de la persona con los datos introducidos
 - Escenario 2: los datos se han introducido de forma incorrecta: Dado: el usuario ha introducido los datos con algún error Cuando: el usuario clica en calcular peso ideal Entonces: la aplicación vuelve a perdirle que introduzca los datos
+
+
+# Práctica 6
+
+Diagrama de clases del patrón Singleton
+
+![Imagen diagrama de clases de patrón singleton](C:/Users/alexa/isa2024-healthcalc/design_patterns/singleton.jpg)
