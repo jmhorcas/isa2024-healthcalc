@@ -3,10 +3,17 @@ package healthcalc;
 import java.text.DecimalFormat;
 
 public class HealthCalcImpl implements HealthCalc {
-    public HealthCalcImpl(){
+    private static HealthCalcImpl instance;
+    private HealthCalcImpl(){
         
     }
 
+    public static HealthCalcImpl getInstance(){
+        if (instance == null){
+            instance = new HealthCalcImpl();
+        }
+        return instance;
+    }
     @Override
     public float idealWeight(int height, char gender) throws Exception {
         float pesoIdeal;

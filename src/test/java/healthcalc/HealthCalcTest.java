@@ -17,7 +17,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void generoCorrectoIdealWeight(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             float resultado1 = calculadora.idealWeight(160, 'w');
             assertEquals(56, resultado1, 0.0001);
@@ -34,7 +34,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void cuentasCorrectasMujerIdealWeight(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
 		try{
 			float resultado1 = calculadora.idealWeight(183, 'w');
 			assertEquals(69.8, resultado1, 0.0001);
@@ -58,7 +58,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void cuentasCorrectasHombreIdealWeight(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
 		try{
 			float resultado1 = calculadora.idealWeight(183, 'm');
 			assertEquals(74.75, resultado1, 0.0001);
@@ -82,7 +82,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void generoCorrectobasalMetabolicRate(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             float resultado1 = calculadora.basalMetabolicRate(50f, 160, 'w', 17);
             assertEquals(1254, resultado1, 0.0001);
@@ -99,7 +99,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void cuentasCorrectasMujerbasalMetabolicRate(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
 		try{
 			float resultado1 = calculadora.basalMetabolicRate(80.3f, 184, 'w', 20);
 			assertEquals(1692, resultado1, 0.0001);
@@ -123,7 +123,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void cuentasCorrectasHombrebasalMetabolicRate(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
 		try{
 			float resultado1 = calculadora.basalMetabolicRate(80.3f, 184, 'm', 20);
 			assertEquals(1858, resultado1, 0.0001);
@@ -147,7 +147,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void alturaNoNegativaPesoIdeal(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.idealWeight(0, 'w'));
 			assertThrows(Exception.class, () ->calculadora.idealWeight(-2, 'm'));
@@ -159,7 +159,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void alturaNoMayor300PesoIdeal(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.idealWeight(301, 'w'));
 			assertThrows(Exception.class, () ->calculadora.idealWeight(400, 'm'));
@@ -171,7 +171,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void edadNoNegativa(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, 160, 'w', -2));
 			assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, 170, 'm', -1));
@@ -183,7 +183,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void pesoNoNegativo(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(0, 160, 'w', 77));
 			assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(-50, 170, 'm', 56));
@@ -195,7 +195,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void alturaNoNegativaBMR(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, 0, 'w', 77));
 			assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, -170, 'm', 56));
@@ -207,7 +207,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void alturaNoExcesivaBMR(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, 400, 'w', 77));
 			assertThrows(Exception.class, () ->calculadora.basalMetabolicRate(50, 500, 'm', 56));
@@ -219,7 +219,7 @@ public class HealthCalcTest {
 
 	@Test
 	public void alturaNoMenor100PesoIdealHombres(){
-		HealthCalc calculadora = new HealthCalcImpl();
+		HealthCalc calculadora = HealthCalcImpl.getInstance();
         try {
             assertThrows(Exception.class, () ->calculadora.idealWeight(99, 'm'));
         } catch (Exception e) {
