@@ -73,8 +73,8 @@ Historias de Usuario
 
 Diagrama de clases del patrón Singleton
 
-![Imagen diagrama de clases de patrón singleton](C:/Users/alexa/isa2024-healthcalc/design_patterns/singleton.jpg)
+![Imagen diagrama de clases de patrón singleton](/design_patterns/singleton.jpg)
 
 
 Diagrama de clases del patrón Adapter
-![Imagen diagrama de clases de patrón adapter](C:/User/salexa/isa2024-healthcalc/design_patterns/adapter.jpg)
+![Imagen diagrama de clases de patrón adapter](/design_patterns/adapter.jpg)
