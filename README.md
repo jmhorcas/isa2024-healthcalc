@@ -78,3 +78,6 @@ Diagrama de clases del patrón Singleton
 
 Diagrama de clases del patrón Adapter
 ![Imagen diagrama de clases de patrón adapter](/design_patterns/adapter.jpg)
+
+Diagrama de clases con patrón Proxy
+![Imagen deagrama de clases con patrón Proxy](/design_patterns/proxy.jpg)
