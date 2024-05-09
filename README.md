@@ -68,7 +68,6 @@ Historias de Usuario
 - Escenario 1: los datos son introducidos correctamente y se devuelve la BMR Dado: el usuario ha introducido los datos sin errores Cuando: el usuario clica en calcular BMR Entonces: la aplicación devuelve el BMR de la persona con los datos introducidos
 - Escenario 2: los datos se han introducido de forma incorrecta: Dado: el usuario ha introducido los datos con algún error Cuando: el usuario clica en calcular peso ideal Entonces: la aplicación vuelve a perdirle que introduzca los datos
 
-
 # Práctica 6
 
 Diagrama de clases del patrón Singleton
@@ -81,3 +80,6 @@ Diagrama de clases del patrón Adapter
 
 Diagrama de clases con patrón Proxy
 ![Imagen deagrama de clases con patrón Proxy](/design_patterns/proxy.jpg)
+
+Diagrama de clases con patrón Decorator
+![Imagen diagrama de clases con patrón Decorator](/design_patterns/decorator.jpg)
