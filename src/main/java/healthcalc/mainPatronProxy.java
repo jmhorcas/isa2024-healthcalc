@@ -1,24 +1,30 @@
 package healthcalc;
 
 public class mainPatronProxy {
+
     public static void main(String[] args) {
-        // Crear una instancia del proxy HealthStatsProxy
-        HealthStatsProxy proxy = new HealthStatsProxy();
+        HealthCalc healthCalc = HealthCalcImpl.getInstance();
+        HealthHospital adapter = new HealthCalcAdapter(healthCalc);
+        HealthStatsProxy proxy = new HealthStatsProxy(adapter);
 
-        // Crear pacientes de prueba y agregarlos al proxy
-        Paciente paciente1 = new Paciente(170, 70, 30, 'm');
-        Paciente paciente2 = new Paciente(160, 65, 25, 'w');
+        int pesoIdealMujer = proxy.pesoIdeal('w', 1.65f);
+        System.out.println("Peso ideal para mujer: " + pesoIdealMujer);
 
-        proxy.agregarPaciente(paciente1);
-        proxy.agregarPaciente(paciente2);
+        double bmrMujer = proxy.bmr('w', 20, 1.59f, 55000);
+        System.out.println("BMR para mujer: " + bmrMujer);
 
-        // Ejemplo de cálculo de estadísticas
-        System.out.println("Altura media de los pacientes: " + proxy.alturaMedia());
-        System.out.println("Peso medio de los pacientes: " + proxy.pesoMedio());
-        System.out.println("Edad media de los pacientes: " + proxy.edadMedia());
-        System.out.println("BMR medio de los pacientes: " + proxy.bmrMedio());
+        int pesoIdealHombre = proxy.pesoIdeal('m', 1.83f);
+        System.out.println("Peso ideal para hombre: " + pesoIdealHombre);
+
+        double bmrHombre = proxy.bmr('m', 30, 1.80f, 75000);
+        System.out.println("BMR para hombre: " + bmrHombre);
+
+        System.out.println("Altura media: " + proxy.alturaMedia() + "metros");
+        System.out.println("Peso medio: " + proxy.pesoMedio() + "gramos");
+        System.out.println("Edad media: " + proxy.edadMedia());
+        System.out.println("BMR medio: " + proxy.bmrMedio());
+        System.out.println("Número de hombres: " + proxy.numSexoH());
+        System.out.println("Número de mujeres: " + proxy.numSexoM());
         System.out.println("Número total de pacientes: " + proxy.numTotalPacientes());
-        System.out.println("Número de pacientes de sexo masculino: " + proxy.numSexoH());
-        System.out.println("Número de pacientes de sexo femenino: " + proxy.numSexoM());
     }
 }

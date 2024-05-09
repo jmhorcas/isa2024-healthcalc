@@ -10,7 +10,9 @@ public class HealthCalcAdapter implements HealthHospital {
     @Override
     public double bmr(char gender, int age, float height, int weight) {
         try {
-            return healthCalc.basalMetabolicRate(weight, (int) height, gender, age);
+            float peso = weight/1000;
+            float altura = height * 100;
+            return healthCalc.basalMetabolicRate(peso, (int)altura, gender, age);
         } catch (Exception e) {
             e.printStackTrace();
             return 0.0;
@@ -20,7 +22,8 @@ public class HealthCalcAdapter implements HealthHospital {
     @Override
     public int pesoIdeal(char gender, float height) {
         try {
-            return (int) healthCalc.idealWeight((int) height, gender);
+            float altura = height * 100;
+            return (int)healthCalc.idealWeight((int)altura, gender);
         } catch (Exception e) {
             e.printStackTrace();
             return 0;
